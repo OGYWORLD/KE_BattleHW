@@ -1,5 +1,6 @@
 ﻿  FightingGame.cpp
-  PlayerKeyboard.cpp
-C:\Users\admin\Desktop\KE_C_CPP-main\20240412_2\20240412_2\PlayerKeyboard.cpp(5,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ImagePrint.cpp
+  Main.cpp
+  Music.cpp
   Generating Code...
-  20240412_2.vcxproj -> C:\Users\admin\Desktop\KE_C_CPP-main\20240412_2\x64\Debug\20240412_2.exe
+  20240412_2.vcxproj -> C:\Users\admin\Desktop\[경일] 전투과제\Project\x64\Debug\20240412_2.exe

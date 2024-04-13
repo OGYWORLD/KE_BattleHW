@@ -12,10 +12,12 @@ ImagePrint::~ImagePrint()
 	delete handle;
 	delete steve;
 	delete villan;
+	delete music;
 }
 
 int ImagePrint::IntroImagePrint()
 {
+	music->PlayStartSceneMusic();
 	IntroTitle();
 	Leaf1();
 	Leaf2();
@@ -246,6 +248,8 @@ void ImagePrint::IntroBox()
 
 void ImagePrint::SelectPlayBlink()
 {
+	PlaySound(NULL, 0, 0);
+	music->PlaySelectSound();
 	system("cls");
 
 	int index = 0;

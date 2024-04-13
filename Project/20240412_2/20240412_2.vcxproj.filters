@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Source Files">
       <UniqueIdentifier>{21bece9c-c89a-4939-bed9-50be915e7583}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Sound">
+      <UniqueIdentifier>{f9b46c29-0903-4bf9-af6b-ead6dc959169}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -46,6 +49,9 @@
       <Filter>Source Files\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Villan.cpp">
+      <Filter>Source Files\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Music.cpp">
       <Filter>Source Files\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -83,5 +89,16 @@
     <ClInclude Include="Villan.h">
       <Filter>Source Files\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Music.h">
+      <Filter>Source Files\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Mia Famiglia.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
+    <Media Include="Select.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@
 #include "GameHandler.h"
 #include "Steve.h"
 #include "Villan.h"
+#include "Music.h"
 #include <iostream>
 
 class ImagePrint
@@ -15,6 +16,8 @@ private:
 	GameHandler* handle = new GameHandler;
 	Steve* steve = new Steve;
 	Villan* villan = new Villan;
+
+	Music* music = new Music;
 
 public:
 	ImagePrint();
