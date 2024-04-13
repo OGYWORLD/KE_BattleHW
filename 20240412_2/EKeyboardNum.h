@@ -1,0 +1,41 @@
+#pragma once
+
+enum EKEYBOARDNUM
+{
+	DIRECTION = 224,
+	KEY_UP = 72,
+	KEY_DOWN = 80,
+	KEY_LEFT = 75,
+	KEY_RIGHT = 77,
+	SPACE = 32
+};
+
+enum EPLAY_MODE
+{
+	PLAY = 0,
+	EXIT = 2
+};
+
+enum EBATTLE_CHOOSE
+{
+	BATTLE = 0,
+	RUN = 48
+};
+
+enum ESTEVE_ATTACK
+{
+	GUN = 0,
+	KNIFE = 42
+};
+
+enum EVILLAN_ATTACK
+{
+	V_GUN = 0,
+	V_KNIFE = 42
+};
+
+enum EWHOSE_TURN
+{
+	STEVE,
+	VILLAN
+};
