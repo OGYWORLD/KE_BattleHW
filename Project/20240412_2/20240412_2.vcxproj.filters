@@ -100,5 +100,8 @@
     <Media Include="Select.wav">
       <Filter>Source Files\Sound</Filter>
     </Media>
+    <Media Include="TextSound.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -17,3 +17,8 @@ void Music::PlaySelectSound()
 {
 	PlaySound(TEXT("Select.wav"), NULL, SND_ASYNC);
 }
+
+void Music::PlayTextSound()
+{
+	PlaySound(TEXT("TextSound.wav"), NULL, SND_ASYNC);
+}

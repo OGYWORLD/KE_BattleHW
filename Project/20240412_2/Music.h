@@ -15,5 +15,7 @@ public:
 	void PlayStartSceneMusic();
 
 	void PlaySelectSound();
+
+	void PlayTextSound();
 };
 

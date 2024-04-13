@@ -167,6 +167,7 @@
   <ItemGroup>
     <Media Include="Mia Famiglia.wav" />
     <Media Include="Select.wav" />
+    <Media Include="TextSound.wav" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

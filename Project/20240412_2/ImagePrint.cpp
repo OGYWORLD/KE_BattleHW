@@ -307,8 +307,8 @@ void ImagePrint::IntroText()
 	char IntroText1[100] = "스티비? 이번 상원의원에 출마한 써니보이 보체티의......";
 	char IntroText2[10] = "따까리?";
 	char IntroText3[10] = "......";
-	char IntroText4[100] = "캠프의 브레인 입니다만.";
-	char IntroText5[100] = "그래.. 뭐, 브레인이든 따까리든. 치치에 대한 정보는 나도 없어.";
+	char IntroText4[100] = "캠프의 브래인 입니다만.";
+	char IntroText5[100] = "그래.. 뭐, 브래인이든 따까리든. 치치에 대한 정보는 나도 없어.";
 	char IntroText6[100] = "어찌됐든 그 녀석, 이미 죽었잖아?";
 	char IntroText7[100] = "뭐.. 납득하기 싫으면 총질이라도 하던지, 캠프의 따까리씨.";
 
@@ -349,6 +349,7 @@ void ImagePrint::PrintText(int x, int y, char* text, int delay, int size)
 		{
 			break;
 		}
+		
 		printf("%c", text[index]);
 		Sleep(delay);
 
@@ -462,6 +463,7 @@ void ImagePrint::BattleAttack(int WhoSay)
 
 		if (handle->GetWhoseTurn() == ESTEVE_ATTACK::GUN)
 		{
+			music->PlaySelectSound();
 			steve->SetAttack(ESTEVE_ATTACK::GUN);
 
 			to->GoToXYPosition(BATTLE_TEXT_BOX_X + 18, BATTLE_TEXT_BOX_Y + 3);
@@ -475,6 +477,8 @@ void ImagePrint::BattleAttack(int WhoSay)
 		}
 		else if (handle->GetWhoseTurn() == ESTEVE_ATTACK::KNIFE)
 		{
+			music->PlaySelectSound();
+
 			steve->SetAttack(ESTEVE_ATTACK::KNIFE);
 
 			to->GoToXYPosition(BATTLE_TEXT_BOX_X + 18, BATTLE_TEXT_BOX_Y + 3);
@@ -567,6 +571,7 @@ void ImagePrint::BattleScene()
 
 			BattleTextPrint();
 			int PlayerChoose = keyboard->BattleBoxSelect();
+			music->PlaySelectSound();
 			if (PlayerChoose == EBATTLE_CHOOSE::RUN)
 			{
 				BattleRun(EWHOSE_TURN::STEVE);
@@ -590,6 +595,7 @@ void ImagePrint::BattleScene()
 
 			BattleTextPrint();
 			int PlayerChoose = keyboard->BattleComBoxSelect();
+			music->PlaySelectSound();
 			if (PlayerChoose == EBATTLE_CHOOSE::RUN)
 			{
 				BattleRun(EWHOSE_TURN::VILLAN);
