@@ -7,6 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20240412_2", "20240412_2\20
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9CCA790-8F32-476B-8253-01694A01CD87}"
 	ProjectSection(SolutionItems) = preProject
+		Music\Family Shootgun Music.wav = Music\Family Shootgun Music.wav
+		Music\I wrote book.wav = Music\I wrote book.wav
+		Music\Love.wav = Music\Love.wav
 		20240412_2\Mia Famiglia.wav = 20240412_2\Mia Famiglia.wav
 		20240412_2\Select.wav = 20240412_2\Select.wav
 		20240412_2\TextSound.wav = 20240412_2\TextSound.wav

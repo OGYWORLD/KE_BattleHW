@@ -165,6 +165,9 @@
     <ClInclude Include="Villan.h" />
   </ItemGroup>
   <ItemGroup>
+    <Media Include="..\Music\Family Shootgun Music.wav" />
+    <Media Include="..\Music\I wrote book.wav" />
+    <Media Include="..\Music\Love.wav" />
     <Media Include="Mia Famiglia.wav" />
     <Media Include="Select.wav" />
     <Media Include="TextSound.wav" />

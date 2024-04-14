@@ -103,5 +103,14 @@
     <Media Include="TextSound.wav">
       <Filter>Source Files\Sound</Filter>
     </Media>
+    <Media Include="..\Music\Love.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
+    <Media Include="..\Music\I wrote book.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
+    <Media Include="..\Music\Family Shootgun Music.wav">
+      <Filter>Source Files\Sound</Filter>
+    </Media>
   </ItemGroup>
 </Project>

@@ -112,6 +112,8 @@ int PlayerKeyboard::BattleAttackSelect()
 
 	while (1)
 	{
+		CleanInputBuffer();
+
 		to->GoToXYPosition(BATTLE_SELECT_X + x, BATTLE_SELECT_Y);
 		printf("¢º");
 		Sleep(500);

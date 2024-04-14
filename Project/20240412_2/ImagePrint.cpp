@@ -296,6 +296,7 @@ void ImagePrint::IntroTitle()
 
 void ImagePrint::IntroScene()
 {
+	music->PlayIntroMusic();
 	IntroText();
 	
 }
@@ -463,7 +464,6 @@ void ImagePrint::BattleAttack(int WhoSay)
 
 		if (handle->GetWhoseTurn() == ESTEVE_ATTACK::GUN)
 		{
-			music->PlaySelectSound();
 			steve->SetAttack(ESTEVE_ATTACK::GUN);
 
 			to->GoToXYPosition(BATTLE_TEXT_BOX_X + 18, BATTLE_TEXT_BOX_Y + 3);
@@ -477,7 +477,6 @@ void ImagePrint::BattleAttack(int WhoSay)
 		}
 		else if (handle->GetWhoseTurn() == ESTEVE_ATTACK::KNIFE)
 		{
-			music->PlaySelectSound();
 
 			steve->SetAttack(ESTEVE_ATTACK::KNIFE);
 
@@ -543,6 +542,7 @@ void ImagePrint::PrintHPBar(int CurrentHP, int x, int y)
 
 void ImagePrint::BattleScene()
 {
+	music->PlayStartSceneMusic();
 
 	while (1)
 	{
@@ -571,7 +571,6 @@ void ImagePrint::BattleScene()
 
 			BattleTextPrint();
 			int PlayerChoose = keyboard->BattleBoxSelect();
-			music->PlaySelectSound();
 			if (PlayerChoose == EBATTLE_CHOOSE::RUN)
 			{
 				BattleRun(EWHOSE_TURN::STEVE);
@@ -595,7 +594,6 @@ void ImagePrint::BattleScene()
 
 			BattleTextPrint();
 			int PlayerChoose = keyboard->BattleComBoxSelect();
-			music->PlaySelectSound();
 			if (PlayerChoose == EBATTLE_CHOOSE::RUN)
 			{
 				BattleRun(EWHOSE_TURN::VILLAN);
@@ -628,13 +626,16 @@ void ImagePrint::DisappearCharacter(int x, int y, int VSize)
 
 void ImagePrint::VillanDefeat()
 {
+	music->StopPlayMusic();
 	Sleep(1000);
 	system("cls");
 	BattelVillanCharacter(4);
 	Sleep(1000);
 
+	music->PlaySelectSound();
 	DisappearCharacter(VILLAN_X, VILLAN_Y, SMALL_SPRITE);
 	Sleep(2000);
+	music->PlayEnding1Music();
 	VillanDefeatText();
 
 }
@@ -685,13 +686,15 @@ void ImagePrint::VillanDefeatText()
 
 void ImagePrint::SteveDefeat()
 {
+	music->StopPlayMusic();
 	Sleep(1000);
 	system("cls");
 	BattelSteveCharacter(4);
 	Sleep(1000);
-
+	music->PlaySelectSound();
 	DisappearCharacter(STEVE_X, STEVE_Y, SMALL_SPRITE);
 	Sleep(2000);
+	music->PlayEnding2Music();
 	SteveDefeatText();
 }
 
